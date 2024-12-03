@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 1400px;
+    height: 700px;
+    border-radius: 5px;
+    background-color: rebeccapurple;
+    margin: 50px auto;
+    background-image: url(image/Angkor_Wat.jpg);
+    /* background-size: 50% 50%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+.section{
+    width: 1400px;
+    height: 1000px;
+    background-color: rgb(212, 152, 212);
+    margin: auto;
+}
+.container .blur{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.481);
+    padding-top: 150px;
+    backdrop-filter: blur(2px);
+}
+.container h1{
+    font-size: 60px;
+    color: red;
+    text-align: center;
+   padding-top: 30px;
+}
+.container p{
+    width: 600px;
+    font-size: 20px;
+    color: rgb(197, 195, 195);
+    margin: 30px auto;
+    text-align: center;
+
+}
+.container button{
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(216, 78, 172);
+    color: white;
+    font-size: 18px;
+    transition: 0.4s;
+}
+.section .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.section .col{
+    width: calc(1310px/3);
+    height: 400px;
+    background-color: red;
+    border-radius: 15px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section .col .contact{
+    width: 300px;
+    height: 60px;
+    background-color: rgba(0, 255, 255, 0.512);
+    position: absolute;
+    top: -80px;
+    left: 70px;
+    visibility: hidden;
+    transition: 0.6s;
+    opacity: 0;
+}
+.container button:hover{
+    background-color: red;
+    transition: 0.4s;
+}
+
+.col:hover .contact{
+    visibility: visible;
+    opacity: 1;
+    top: 170px;
+}

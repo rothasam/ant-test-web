@@ -1,0 +1,136 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* memu */
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+.navbar .menu{
+    width: 1400px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu h3{
+    color: white;
+    font-size: 23px;
+}
+.menu .item{
+    display: flex;
+    /* justify-content: center; */
+    gap: 28px;
+}
+.item .list{
+    color: white;
+    font-size: 18px;
+}
+
+/* banner */
+
+.banner .row{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 40px;
+}
+.banner{
+    width: 1400px;
+    height: 400px;
+    /* background-color: lightcoral; */
+    margin: 35px auto;
+}
+.banner .col-1{
+    width: 60%;
+}
+.banner .col-2{
+    width: 40%;
+}
+.banner .col-1 img{
+    width: 100%;
+    border-radius: 8px;
+}
+.col-2 h1{
+    font-size: 33px;
+}
+.col-2 p{
+    margin: 20px 0px;
+    color: grey;
+}
+.col-2 button{
+    width: 120px;
+    height: 40px;
+    /* background-color: transparent; */
+    background-color: #0D6EFD;
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+
+/* container */
+.container{
+    width: 1400px;
+    height: 100px;
+    background-color: #6C757D;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 35px;
+}
+.container p{
+    color: white;
+    font-family: Arial;
+}
+
+/* card */
+.card-container{
+    width: 1400px;
+    /* height: 400px; */
+    height: auto;
+    /* background-color: rgb(57, 164, 164); */
+    margin: 50px auto;
+}
+.card-container .col{
+    width: calc(1320px/3);
+    /* background-color: #0D6EFD; */
+    border: 1px solid grey;
+    border-radius: 8px;
+    /* padding: 20px; */
+}
+.card-container .row{
+    display: flex;
+    justify-content: space-between;
+}
+.card-container .col h1{
+    font-size: 35px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.card-container .col p{
+    font-size: 20px;
+    margin: 22px 0px;
+    padding: 0px 20px;
+}
+.card-container .col .card-footer{
+    background-color: #F7F7F7;
+    padding: 15px;
+    border-radius: 8px;
+}
+.card-container .col button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #0D6EFD;
+    border-radius: 8px;
+    color: white;
+}
+
